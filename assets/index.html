@@ -2,34 +2,26 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>My Bootstrap Site</title>
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <title>Bootstrap Notes</title>
 
-    <!-- Le styles -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <style type="text/css">
-      body {
-        padding-top: 60px;
-        padding-bottom: 40px;
-      }
-    </style>
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+<!-- Mobile viewport optimized: h5bp.com/viewport -->
+	  <meta name="viewport" content="width=device-width">
 
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements 
-    			- updated in Bootstrap 2.02 to include the http: -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+<!-- Main stylesheet imports bootstrap css and adds custom -->
+    <link href="css/style.css" rel="stylesheet">
 
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-  </head>
+<!-- Modernizr for browser feature-checking 
+			+ HTML5shiv (included in modernizr) see modernizr.com -->
+  	<script src="js/modernizr-2.5.3.min.js"></script>
+
+<!-- Fav and touch icons -->
+		<!-- alternatively, remove these lines and place icons
+				directly in the site parent folder 
+				mathiasbynens.be/notes/touch-icons -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
 
   <body>
 
@@ -41,27 +33,16 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="index.html">My Bootstrap Site</a>
+          <a class="brand" href="index.html">Bootstrap Notes</a>
           <div class="nav-collapse">
             <ul class="nav">
-              <li class="active"><a href="index.html"><i class="icon-home icon-white"></i> Home</a></li>
+              <li class="active"><a href="index.html">Welcome</a></li>
 		          <li><a href="setup-notes.html">Setup Notes</a></li>
               <li><a href="navbar-examples.html">Navbar Examples</a></li>              
+		         	<li><a href="tabs-pills.html">Tabs &amp; Pills</a></li>
+		          <li><a href="tabs-pills-PLAY.html">Tabs &amp; Pills PLAY</a></li>
 		        </ul>
-		        <form class="navbar-search pull-right">
-                   <input type="text" class="search-query" placeholder="Search">
-                </form>
-		        <ul class="nav pull-right">
-		           <li class="dropdown">
-		              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Utility <b class="caret"></b></a>
-   	      	          <ul class="dropdown-menu">
-		                 <li><a href="#">Link 1</a></li>
-		                 <li><a href="#">Link 2</a></li>
-                         <li><a href="#">Link 3</a></li>
-                      </ul>
-                   </li>
-		        </ul>
-		        	<a class="btn btn-primary pull-right" href="http://twitter.github.com/bootstrap/">Twitter Bootstrap Home</a>
+		        	<a class="btn btn-primary pull-right" href="http://twitter.github.com/bootstrap/"><b class="icon-home icon-white"></b> Twitter Bootstrap Home</a>
           </div><!--/.nav-collapse -->
         </div>
       </div>
@@ -70,11 +51,11 @@
     <div class="container">
 
       <div class="hero-unit">
-        <h1>My Bootstrap Site</h1>
-        <p>This page is based on Twitter Bootstrap's starter template file for a "Basic marketing site," <a href="http://twitter.github.com/bootstrap/examples.html">which is found in their examples</a>.</p>
-        <p>These files have been updated to Twitter Bootstrap version 2.02. <a href="https://github.com/twitter/bootstrap/wiki/Changelog">Read more here</a>.</p>
+      	<hgroup>
+	        <h1>Bootstrap Notes</h1>
+	        <h2>Putting Twitter Bootstrap to work <small>with version 2.0.2</small></h2>
+        </hgroup>
       </div>
-
       <div class="row">
         <div class="span4">
           <h2>Setup Notes</h2>
@@ -92,8 +73,9 @@
           <p><a class="btn" href="navbar-examples.html">Go there &raquo;</a></p>
        </div>
         <div class="span4">
-          <h2>Next Up: Tabs & Pills</h2>
-          <p>Coming soon!</p>
+          <h2>Tabs & Pills</h2>
+          <p>Examples utilizing Bootstrap's Tabs & Pills styles and the Tabs JavaScript plugin.</p>
+          <p><a class="btn" href="tabs-pills.html">Go there &raquo;</a></p>
         </div>
       </div><!-- end row 1 -->
 
