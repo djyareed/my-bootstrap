@@ -2,20 +2,23 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Carousel | Twitter Bootstrap 2.0.4</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Starter files for implementing Twitter Bootstrap's Carousel -- using Bootstrap version 2.0.4">
+    <title>Bootstrap 101: Trimming File Size</title>
+
+    <meta name="description" content="Sample files for a tutorial on optimizing the Bootstrap CSS and JS files">
     <meta name="author" content="David Cochran for webdesign.tutsplus.com">
 
+    <!-- Mobile viewport optimized: h5bp.com/viewport -->
+    <meta name="viewport" content="width=device-width">
+
     <!-- Le styles -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <style type="text/css">
       body {
         padding-top: 60px;
         padding-bottom: 40px;
       }
     </style>
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -31,7 +34,6 @@
       <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
       <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png"> 
     -->
-  </head>
 
   <body>
 
@@ -43,97 +45,98 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="#">Carousel Demo</a>
+          <a class="brand" href="index.html">Bootstrap 101</a>
           <div class="nav-collapse">
             <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                      Dropdown
-                      <b class="caret"></b>
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Item 1</a></li>
-                  <li><a href="#">Item 2</a></li>
-                </ul>
-              </li><!-- dropdown -->
-            </ul><!-- /.nav -->
+              <li class="active"><a href="index.html">Welcome</a></li>
+		          <li><a href="setup-notes.html">Setup Notes</a></li>
+              <li><a href="navbar-examples.html">Navbar Examples</a></li>              
+		         	<li><a href="tabs-pills.html">Tabs &amp; Pills</a></li>
+              <li><a href="carousel.html">Carousel</a></li>
+		        </ul>
+		        	<a class="btn btn-primary pull-right" href="http://twitter.github.com/bootstrap/"><b class="icon-home icon-white"></b> Twitter Bootstrap Home</a>
           </div><!--/.nav-collapse -->
-        </div><!-- /.container -->
-      </div><!-- /.navbar-inner -->
-    </div><!-- /.navbar -->
+        </div>
+      </div>
+    </div>
 
     <div class="container">
 
-    <!--  Carousel - consult the Twitter Bootstrap docs at 
-          http://twitter.github.com/bootstrap/javascript.html#carousel -->
-    <div id="this-carousel-id" class="carousel slide"><!-- class of slide for animation -->
-      <div class="carousel-inner">
-        <div class="item active"><!-- class of active since it's the first item -->
-          <img src="img/va1.jpg" alt="" />
-          <div class="carousel-caption">
-            <p>Caption text here</p>
-          </div>
-        </div>
-        <div class="item">
-          <img src="img/va2.jpg" alt="" />
-          <div class="carousel-caption">
-            <p>Caption text here</p>
-          </div>
-        </div>
-        <div class="item">
-          <img src="img/va3.jpg" alt="" />
-          <div class="carousel-caption">
-            <p>Caption text here</p>
-          </div>
-        </div>
-        <div class="item">
-          <img src="img/va4.jpg" alt="" />
-          <div class="carousel-caption">
-            <p>Caption text here</p>
-          </div>
-        </div>
-      </div><!-- /.carousel-inner -->
-      <!--  Next and Previous controls below
-            href values must reference the id for this carousel -->
-        <a class="carousel-control left" href="#this-carousel-id" data-slide="prev">&lsaquo;</a>
-        <a class="carousel-control right" href="#this-carousel-id" data-slide="next">&rsaquo;</a>
-    </div><!-- /.carousel -->
-
-      <!-- Example row of columns -->
+      <div class="hero-unit">
+      	<hgroup>
+	        <h1>Bootstrap 101: Trimming File Size</h1>
+	        <h2><small>now with version 2.0.4</small></h2>
+        </hgroup>
+            <h2>Goals</h2>
+            <ol>
+              <li>Reduce CSS file size</li>
+              <li>Reduce JavaScript file size</li>
+              <li>Reduce image file size</li>
+            </ol>
+            <h3>Resource Links</h3>
+            <p>
+              <a class="btn btn-primary" href="http://twitter.github.com/bootstrap/download.html"><i class="icon-globe icon-white"></i> Bootstrap's Customize Page</a> 
+              <a class="btn btn-primary" href="http://www.smushit.com/ysmush.it/"><i class="icon-globe icon-white"></i> Yahoo!'s Smush.it</a></p>
+            <h3>Further Reading</h3>
+              <ul>
+                <li><a href="https://developers.google.com/speed/docs/best-practices/payload">Minimize payload size - Google Developers</a></li>
+                <li><a href="http://speckyboy.com/2011/03/30/website-speed-part-2-working-with-images/">Optimizing Images for the Web - Andy Killen</a></li>
+              </ul>
+         </div>
+      
+      <h2>Previously discussed ...</h2>
       <div class="row">
         <div class="span4">
-          <h2>Heading</h2>
-           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+          <h3>Setup Notes</h3>
+           <p>Get your markup, CSS, and JavaScript organized and linked up!</p>
+          <p><a class="btn" href="setup-notes.html">Go there &raquo;</a></p>
         </div>
         <div class="span4">
-          <h2>Heading</h2>
-           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+          <h3>Navbar Examples</h3>
+           <p>Suggestions and code for three ways to setup your navbar:</p>
+           	<ul>
+           		<li>fixed-top</li>
+           		<li>static full-width</li>
+           		<li>static inside container</li>
+           	</ul>
+          <p><a class="btn" href="navbar-examples.html">Go there &raquo;</a></p>
        </div>
         <div class="span4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+          <h3>Tabs &amp; Pills</h3>
+          <p>Examples utilizing Bootstrap's Tabs &amp; Pills styles and the Tabs JavaScript plugin.</p>
+          <p><a class="btn" href="tabs-pills.html">Go there &raquo;</a></p>
         </div>
-      </div>
+      </div><!-- end row 1 -->
+      <div class="row">
+        <div class="span4">
+          <h3>Carousel</h3>
+          <p>A sample image slideshow utilizing Bootstrap's Carousel styles and JavaScript plugin.</p>
+          <p><a class="btn" href="Carousel.html">Go there &raquo;</a></p>
+        </div>
+      </div><!-- end row 1 -->
 
       <hr>
 
+
       <footer>
-        <p>By <a href="http://twitter.com/davidcochran">David Cochran</a> of <a href="http://alittlecode.com/">aLittleCode.com</a> for <a href="http://webdesign.tutsplus.com/">webdesign.tutsplus.com</a></p>
+        <p>By David Cochran of <a href="http://okwu.edu">Oklahoma Wesleyan University</a> and <a href="http://alittlecode.com/">aLittleCode.com</a> for <a href="http://webdesign.tutsplus.com/">webdesign.tutsplus.com</a>. Free for your use! (No warranties, no guarantees.)</p>
+        <p><a href="http://webdesign.tutsplus.com/series/twitter-bootstrap-101/">See the full Twitter Bootstrap 101 Tutorial Series</a></p>
       </footer>
+
 
     </div> <!-- /container -->
 
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
+<!-- ==============================================
+		 JavaScript below! 															-->
+
+<!-- jQuery via Google + local fallback, see h5bp.com -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script>
+<!-- Bootstrap jQuery plugins compiled and minified -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
+cript src="js/jquery-1.7.2.min.js"><\/script>')</script>
     <!-- Bootstrap jQuery plugins compiled and minified -->
     <script src="js/bootstrap.min.js"></script>
     <script>
